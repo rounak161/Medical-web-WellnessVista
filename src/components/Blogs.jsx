@@ -36,7 +36,7 @@ const Blogs = () => {
           <BlogCard
             img={img3}
             description="Our platform allows individuals to browse through a diverse network of licensed therapists, read their profiles, and schedule virtual therapy sessions that fit their needs and preferences."
-            headlines="Understanding Pediatric Vaccinations"
+            headlines="Understanding your Real Problems"
           />
           <BlogCard
             img={img4}

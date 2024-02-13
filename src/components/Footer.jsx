@@ -55,7 +55,7 @@ const Footer = () => {
               duration={500}
               className=" hover:text-hoverColor transition-all cursor-pointer"
             >
-              Lab Test
+              Convenience
             </Link>
             <Link
               to="services"
@@ -64,7 +64,7 @@ const Footer = () => {
               duration={500}
               className=" hover:text-hoverColor transition-all cursor-pointer"
             >
-              Health Check
+              Quality Care
             </Link>
             <Link
               to="services"
@@ -73,7 +73,7 @@ const Footer = () => {
               duration={500}
               className=" hover:text-hoverColor transition-all cursor-pointer"
             >
-              Heart Health
+              Privacy and Security
             </Link>
           </nav>
         </div>
@@ -81,13 +81,13 @@ const Footer = () => {
           <h1 className=" font-medium text-xl pb-4 pt-5 md:pt-0">Contact Us</h1>
           <nav className=" flex flex-col gap-2">
             <Link to="/" spy={true} smooth={true} duration={500}>
-              123 Elm Street, Suite 456 Springfield, IL 62701 United States
+              Rounak Kamble, IIT Bhilai
             </Link>
             <Link to="/" spy={true} smooth={true} duration={500}>
-              support@care.com
+              rounakr@iitbhilai.ac.in
             </Link>
             <Link to="/" spy={true} smooth={true} duration={500}>
-              +123-456-7890
+              +91 93567 97787
             </Link>
           </nav>
         </div>
@@ -95,7 +95,7 @@ const Footer = () => {
       <div>
         <p className=" text-center py-4">
           @copyright developed by
-          <span className=" text-hoverColor"> champion programmers</span> | All
+          <span className=" text-hoverColor"> InHeal Dev Team</span> | All
           rights reserved
         </p>
       </div>

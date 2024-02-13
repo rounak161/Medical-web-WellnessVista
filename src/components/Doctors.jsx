@@ -8,34 +8,40 @@ import { FaArrowRight } from "react-icons/fa";
 const Doctors = () => {
   const data = [
     {
-      img: "/src/assets/img/doc1.jpg",
+      img: "/src/assets/img/doc.jpeg",
       name: "Dr. Serena Mitchell",
-      specialties: "Orthopedic Surgeon",
+      specialties: "M. A. Clinical Psychology B. Ed. Ph. D. Psychology",
+      exp: "18 Year Counseling experience",
     },
     {
       img: "/src/assets/img/doc2.jpg",
       name: "Dr. Julian Bennett",
       specialties: "Cardiologist",
+      exp: "7 Year Counseling experience",
     },
     {
       img: "/src/assets/img/doc3.jpg",
       name: "Dr. Camila Rodriguez",
       specialties: "Pediatrician",
+      exp: "8 Year Counseling experience",
     },
     {
       img: "/src/assets/img/doc4.jpg",
       name: "Dr. Victor Nguyen",
       specialties: "Neurologist",
+      exp: "14 Year Counseling experience",
     },
     {
       img: "/src/assets/img/doc5.jpg",
       name: "Dr. Ethan Carter",
       specialties: "Dermatologist",
+      exp: "13 Year Counseling experience",
     },
     {
       img: "/src/assets/img/doc6.jpg",
       name: "Dr. Olivia Martinez",
       specialties: "Ophthalmologist",
+      exp: "18 Year Counseling experience",
     },
   ];
 
@@ -116,12 +122,15 @@ const Doctors = () => {
                 <img
                   src={e.img}
                   alt="img"
-                  className=" h-56 rounded-t-xl w-full"
+                  className="h-56 rounded-t-xl w-full"
                 />
               </div>
 
               <div className=" flex flex-col justify-center items-center">
                 <h1 className=" font-semibold text-xl pt-4">{e.name}</h1>
+                <h1 className=" font-semibold pt-2">
+                  {e.exp}
+                </h1>
                 <h3 className=" pt-2">{e.specialties}</h3>
               </div>
             </div>

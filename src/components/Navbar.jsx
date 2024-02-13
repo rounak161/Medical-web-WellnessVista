@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import Button from "../layouts/Button";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
@@ -8,6 +8,14 @@ import Logo from "../assets/img/logo.png";
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
   const [showForm, setShowForm] = useState(false);
+  const [username, setUsername] = useState("");
+
+  useEffect(() => {
+    // Retrieve username from localStorage when component mounts
+    const storedUsername = localStorage.getItem("username");
+    console.log(storedUsername);
+    setUsername(storedUsername);
+  }, []);
 
   const handleChange = () => {
     setMenu(!menu);
@@ -31,8 +39,14 @@ const Navbar = () => {
       <div>
         <div className=" flex flex-row justify-between p-5 md:px-32 px-5 bg-backgroundColor shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
           <div className=" flex flex-row items-center cursor-pointer">
-            <Link to="home" className="flex items-center gap-2" spy={true} smooth={true} duration={500}>
-              <img src={Logo} className="w-12 h-12"/>
+            <Link
+              to="home"
+              className="flex items-center gap-2"
+              spy={true}
+              smooth={true}
+              duration={500}
+            >
+              <img src={Logo} className="w-12 h-12" />
               <h1 className=" text-2xl font-semibold">WellnessVista.</h1>
             </Link>
           </div>
@@ -85,13 +99,16 @@ const Navbar = () => {
             </Link>
           </nav>
 
-          <div className=" hidden lg:flex">
+          <div className="items-center hidden lg:flex">
             <button
               className="bg-brightColor text-white px-4 py-2 rounded-md hover:bg-hoverColor transition duration-300 ease-in-out"
               onClick={openForm}
             >
               Contact Us
             </button>
+            <div className="items-center mx-4 font-medium text-xl">
+              {username}
+            </div>
           </div>
 
           {showForm && <Contact closeForm={closeForm} />}
@@ -167,6 +184,9 @@ const Navbar = () => {
             >
               Contact Us
             </button>
+            <div className="items-center my-3 mx-4 font-medium text-xl">
+              {username}
+            </div>
           </div>
         </div>
       </div>
