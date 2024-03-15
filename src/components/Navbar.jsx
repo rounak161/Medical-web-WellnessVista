@@ -47,7 +47,7 @@ const Navbar = () => {
               duration={500}
             >
               <img src={Logo} className="w-12 h-12" />
-              <h1 className=" text-2xl font-semibold">WellnessVista.</h1>
+              <h1 className=" text-2xl font-semibold">InHeal.care</h1>
             </Link>
           </div>
 
@@ -79,7 +79,7 @@ const Navbar = () => {
             >
               Services
             </Link>
-            <Link
+            {/* <Link
               to="doctors"
               spy={true}
               smooth={true}
@@ -87,9 +87,9 @@ const Navbar = () => {
               className=" hover:text-hoverColor transition-all cursor-pointer"
             >
               Doctors
-            </Link>
+            </Link> */}
             <Link
-              to="blog"
+              to="doctors"
               spy={true}
               smooth={true}
               duration={500}
@@ -104,7 +104,7 @@ const Navbar = () => {
               className="bg-brightColor text-white px-4 py-2 rounded-md hover:bg-hoverColor transition duration-300 ease-in-out"
               onClick={openForm}
             >
-              Contact Us
+              Book Appointment
             </button>
             <div className="items-center mx-4 font-medium text-xl">
               {username}

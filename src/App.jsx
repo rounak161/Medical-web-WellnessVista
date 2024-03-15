@@ -27,11 +27,11 @@ const App = () => {
 
 const MainPage = () => {
   const navigate = useNavigate();
-  useEffect(() => {
-    if (!localStorage.getItem("username")) {
-      navigate("/login");
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (!localStorage.getItem("username")) {
+  //     navigate("/login");
+  //   }
+  // }, []);
 
   return (
     <div>
@@ -47,7 +47,7 @@ const MainPage = () => {
           <Services />
         </div>
         <div id="doctors">
-          <Doctors />
+          {/* <Doctors /> */}
         </div>
         <div id="blogs">
           <Blogs />

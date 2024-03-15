@@ -106,7 +106,7 @@ const Contact = ({ closeForm }) => {
               <Button title="Book Appointment" type="submit" />
               <ToastContainer />
               <button
-                className="bg-backgroundColor text-white px-10 rounded-md active:bg-red-500"
+                className="bg-backgroundColor text-white px-10 rounded-md bg-orange-400"
                 onClick={closeForm}
               >
                 Close

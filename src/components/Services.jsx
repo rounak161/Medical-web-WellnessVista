@@ -23,7 +23,7 @@ const Services = () => {
           </h1>
         </div>
         <div className=" mt-4 lg:mt-0">
-          <Button title="See Services" />
+          {/* <Button title="See Services" /> */}
         </div>
       </div>
       <div className=" flex flex-col lg:flex-row gap-5 pt-14">

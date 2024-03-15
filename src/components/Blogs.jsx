@@ -18,7 +18,7 @@ const Blogs = () => {
           </h1>
         </div>
         <div className=" mt-4 lg:mt-0">
-          <Button title="Our Articles" />
+          {/* <Button title="Our Articles" /> */}
         </div>
       </div>
       <div className=" my-8">
