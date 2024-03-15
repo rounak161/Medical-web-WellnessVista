@@ -17,7 +17,7 @@ const Home = () => {
             of their location, schedule, or budget.
           </p>
 
-          <Button title="See Services" />
+          //<Button title="See Services" />
         </div>
       </div>
     </div>
